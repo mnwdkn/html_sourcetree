@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>よーコーポレーション</title>
+
+    <style type="text/css">
+      body {
+        margin:0px;          /* ページ全体のmargin */
+        padding:0px;         /* ページ全体のpadding */
+        text-align:center;   /* 下記のautoに未対応用のセンタリング */
+        counter-reset: section;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+      }
+      
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      #main {
+        margin-left:auto;    /* 左側マージンを自動的に空ける */
+        margin-right:auto;   /* 右側マージンを自動的に空ける */
+        text-align:left;     /* 中身を左側表示に戻す */
+        width:650px;         /* 幅を決定する */
+      }
+
+      #centered-text {
+        text-align: center;
+      }
+
+      h2:before {
+        counter-increment: section;
+        content: counter(section) ". ";
+      }
+
+      h3:before {
+        counter-increment: subsection;
+        content: counter(section) "." counter(subsection) ". ";
+      }
+
+      h4:before {
+        counter-increment: subsubsection;
+        content: counter(section) "." counter(subsection) "." counter(subsubsection) ". ";
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="centered-text">よーコーポレーション</h1>
+
+      <h1>初めて学ぶGNN (Graph Neural Networks)</h1>
+
+      <h2>はじめに</h2>
+
+      <p>こんにちは！yoです。<br>
+        今回は「GNN (Graph Neural Networks)」を初学者向けに紹介します！<br>
+        ぜひ最後までお読みください。
+      </p>
+
+      <h2>GNNにおけるグラフとは</h2>
+
+      <p><img src="pictures/test.png" alt="test"></p>
+    </div>
+  </body>
+</html>
